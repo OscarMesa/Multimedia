@@ -9,8 +9,6 @@
 <style type="text/css">
     #content7 {
         background: url('themes/multimedia/imagenes/multimedia/7_MUILTIMEDIA GRANDE-01.jpg') no-repeat;
-        padding-bottom: 44em;
-        width:921px; 
-        margin:0 auto;
+
     }
 </style>

@@ -5,7 +5,9 @@
         <?php 
             Yii::app()->clientScript->registerCoreScript('jquery');
             Yii::app()->clientScript->registerCoreScript('jquery.ui');
+
         ?>
+        <link rel="stylesheet" type="text/css" href="<?php echo Yii::app()->theme->getBaseUrl(); ?>/css/template.css" media="screen, projection" />
     </head>
     <body>
         <header></header>
