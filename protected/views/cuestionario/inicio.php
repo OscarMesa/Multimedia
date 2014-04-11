@@ -1,5 +1,10 @@
+<?php
+    foreach(Yii::app()->user->getFlashes() as $key => $message) {
+        echo '<div class="message flash-' . $key . '">' . $message . "</div>\n";
+    }
+?>
 <article id="contenido-multimedia">
-    <?php echo $this->renderPartial('content1'); ?>
+    <?php echo $this->renderPartial($view); ?>
 </article>
 
 
@@ -17,10 +22,13 @@
         e.preventDefault();
     });
 
-    $(document).on('click', '#finalizar', function() {
-
+    $(document).on('click', '#finalizar', function(e) {
+        window.location.href = "<?php echo Yii::app()->getBaseUrl(true)?>/cuestionario/generador";
+        e.preventDefault();
     });
-
+    setTimeout(function(){
+        $('.message').hide(600);
+    },5000);
 </script>
 
 

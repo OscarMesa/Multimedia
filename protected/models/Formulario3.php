@@ -10,7 +10,10 @@ class Formulario3 extends CFormModel
     public function rules()
 	{
 		return array(   
-			array('metas,objetivosVida,vinisteAlMundo,motivacionASeguir', 'required'),
+                        array('metas', 'required', 'message'=>'El campo metas, es obligatorio.'),
+                        array('objetivosVida', 'required', 'message'=>'El campo objetivos, es obligatorio.'),
+                        array('vinisteAlMundo', 'required', 'message'=>'El campo Para que viniste al mundo, es obligatorio.'),
+                        array('motivacionASeguir', 'required', 'message'=>'El campo motivación, es obligatorio.'),
 		);
 	}
         

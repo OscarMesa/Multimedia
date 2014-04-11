@@ -36,6 +36,7 @@ return array(
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
+                        'autoUpdateFlash' => FALSE,
 		),
 		// uncomment the following to enable URLs in path-format
 		
@@ -45,6 +46,17 @@ return array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
+                                'content1' => 'cuestionario/inicio/content1',
+                                'content2' => 'cuestionario/inicio/content2',
+                                'content3' => 'cuestionario/inicio/content3',
+                                'content4' => 'cuestionario/inicio/content4',
+                                'content5' => 'cuestionario/inicio/content5',
+                                'content6' => 'cuestionario/inicio/content6',
+                                'content7' => 'cuestionario/inicio/content7',
+                                'content8' => 'cuestionario/inicio/content8',
+                                'content9' => 'cuestionario/inicio/content9',
+                                'content10' => 'cuestionario/inicio/content10',
+                                'content11' => 'cuestionario/inicio/content11',
 			),
 		),
 		/*

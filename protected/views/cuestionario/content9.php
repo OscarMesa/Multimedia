@@ -6,6 +6,16 @@
             <img src="themes/multimedia/imagenes/multimedia/navegacion/ico_Siguiente.png"><span>Siguiente</span></a>
     </div>
 </div>
+<div id="sec-formulario2">
+    <?php
+    if (isset(Yii::app()->session['formulario2']))
+        $model = Yii::app()->session['formulario2'];
+    else    
+        $model = new Formulario2();
+    echo $this->renderPartial('_formulario2', array('model'=>$model), true);
+    ?>
+</div>
+
 <style type="text/css">
     #content9 {
         background: url('themes/multimedia/imagenes/multimedia/9_MUILTIMEDIA GRANDE-01.jpg') no-repeat;
