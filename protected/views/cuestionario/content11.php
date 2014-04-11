@@ -5,6 +5,7 @@
         $model = Yii::app()->session['formulario3'];
     else    
         $model = new Formulario3();
+    unset($model->errors);
     echo $this->renderPartial('_formulario3', array('model'=>$model), true);
     ?>
 </div>
