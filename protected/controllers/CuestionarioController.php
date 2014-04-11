@@ -67,10 +67,10 @@ class CuestionarioController extends Controller {
                                             'formulario2' => $formulario2,
                                             'formulario3' => $formulario3,
                                                 ), true));
-                                $pdf->Output();
                                 unset(Yii::app()->session['formulario1']);
                                 unset(Yii::app()->session['formulario2']);
                                 unset(Yii::app()->session['formulario3']);
+                                $pdf->Output();
                             } else {
                                 Yii::app()->user->setFlash('error', "Debe completar los campos obligatorios de esta encuesta.");
                                 $this->redirect(Yii::app()->getBaseUrl(true) . '/content11');
