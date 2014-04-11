@@ -1,11 +1,12 @@
 <div id="content5">
     <div id="sec-formulario1">
     <?php 
-    if(isset(Yii::app()->session['formulario1']))
-        $model = Yii::app()->session['formulario1'];
-    else
+    if (isset(Yii::app()->session['formulario1'])){
+        $model1 = Yii::app()->session['formulario1'];
         $model = new Formulario1();
-    unset($model->errors);
+        $model->attributes = $model1->attributes;
+    }else
+        $model = new Formulario1();
         echo $this->renderPartial('_formulario1',array('model'=> $model));
     ?>
 </div>
