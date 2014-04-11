@@ -10,8 +10,6 @@
 <style type="text/css">
     #content3  {
         background: url('themes/multimedia/imagenes/multimedia/3_MUILTIMEDIA GRANDE-01.jpg') no-repeat;
-        padding-bottom: 44em;
-        width:921px; 
-        margin:0 auto;
+
     }
 </style>

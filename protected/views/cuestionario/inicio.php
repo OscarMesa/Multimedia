@@ -35,12 +35,11 @@
 <style type="text/css">
 
     .flechas {
-        margin-top: 27%;
-        margin-right: 45%;
-        position: absolute;
-        right: 0;
-        width: 125px;
-        z-index: 999;
+position: absolute;
+left: 44%;
+bottom: 0px;
+width: 125px;
+z-index: 999;
 
     }
     .flechas img {

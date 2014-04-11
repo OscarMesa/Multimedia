@@ -67,3 +67,48 @@ root {
         position: absolute;
         text-align: center;
     }
+    div#sec-formulario3,  div#sec-formulario1,  div#sec-formulario2 {
+        padding: 0px 10px;
+left: 416px;
+top: 55px;
+        position: absolute;
+        width: 225px;
+height: 332px;
+overflow-y: auto;
+overflow-x: hidden;
+color: white;
+}
+#content1, #content2, #content3, #content4, #content5, #content6, #content7, #content8, #content9, #content10, #content11, #content12, #content13, #content14, #content15{
+position: relative;
+height: 500px;
+        width:921px; 
+        margin:0 auto;
+}
+label.control-label {
+font-size: 12px;
+background: #006CDF;
+border-radius: 10px;
+display: inline-block;
+padding: 0px;
+color: white;
+}
+input.btn {
+position: absolute;
+margin-bottom: 0px;
+background: #F57E22;
+font-weight: bold;
+color: white;
+border-radius: 10px;
+cursor: pointer;
+
+}
+p {
+font-size: 13px;
+margin: 3px;
+}
+li {
+font-size: 12px;
+}
+ul {
+margin: 0px;
+}
