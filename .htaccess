@@ -1,0 +1,19 @@
+RewriteEngine on
+
+#Bloquea y provee seguridad
+#http://www.cyberciti.biz/tips/the-rise-of-bots-spammers-crack-attacks-and-libwww-perl.html
+#SetEnvIfNoCase User-Agent "^libwww-perl*" block_bad_bots
+#Deny from env=block_bad_bots
+
+# if a directory or a file exists, use it directly
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# otherwise forward it to index.php
+
+RewriteRule . index.php
+
+#https://docs.google.com/document/d/1DjYCg2w2spYld-266ntBu_amc9vo6sg4PXrUVwB-cH8/edit
+RewriteCond %{HTTP_USER_AGENT} libwww [NC,OR]
+RewriteCond %{QUERY_STRING} ^(.*)=http [NC]
+RewriteRule ^(.*)$ ~@~S [F,L]
