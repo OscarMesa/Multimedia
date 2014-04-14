@@ -3,7 +3,6 @@
 	header: html_myHTMLHeader;
 	footer: _blank;
 	resetpagenum: 1;
-	background-gradient: linear #1e5799 #7db9e8 0 0.5 1 0.5; 
 }
 </style>
 <?php 
