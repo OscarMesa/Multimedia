@@ -11,7 +11,7 @@ return array(
         'language' => "es",
         'theme' => 'multimedia',
         'defaultController' => 'cuestionario/inicio',
-	'preload'=>array('log'),
+	'preload'=>array(''),
 
 	// autoloading model and component classes
 	'import'=>array(
